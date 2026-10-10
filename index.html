@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <meta name="description" content="Yanheng Li (Lynk) — computational biology and protein design at Beijing Institute of Technology. Research, publications, and open-source projects.">
+  <meta property="og:title" content="Yanheng Li — Protein design & computational biology">
+  <meta property="og:description" content="Generative models for proteins, guided by function. Research, publications, and open-source projects.">
+  <meta property="og:type" content="website">
+  <title>Yanheng Li — Protein design & computational biology</title>
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <link rel="stylesheet" href="styles.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="wordmark" href="#top" aria-label="yl. — Yanheng Li, back to top">yl<span class="wordmark-dot">.</span></a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="navigation" hidden>Menu <span aria-hidden="true">+</span></button>
+      <nav id="navigation" class="navigation" aria-label="Main navigation">
+        <a href="#research">Research</a>
+        <a href="#publications">Publications</a>
+        <a href="#projects">Projects</a>
+        <a href="#cv">CV</a>
+        <a href="#contact">Contact <span aria-hidden="true">↗</span></a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section id="top" class="hero page-width" aria-labelledby="name">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="small-dot" aria-hidden="true"></span> Computational biology & protein design</p>
+        <h1 id="name">Yanheng Li<span class="chinese-name" lang="zh-Hans">李彦衡</span></h1>
+        <p class="hero-alias">Also known as Lynk <span aria-hidden="true">/</span> Beijing Institute of Technology</p>
+        <p class="hero-statement">Generative models.<br> Proteins with <em>purpose.</em></p>
+        <p class="hero-description">I work on structure-conditioned protein generation, exploring how diffusion models and reinforcement learning can guide enzyme sequence design toward function.</p>
+        <div class="hero-links">
+          <a class="button button-dark" href="#publications">Explore my research <span aria-hidden="true">↓</span></a>
+          <a class="text-link" href="https://github.com/lynk-101-li">GitHub <span aria-hidden="true">↗</span></a>
+        </div>
+      </div>
+      <figure class="hero-figure">
+        <div class="figure-topline"><span>STRUCTURE → SEQUENCE</span><span aria-hidden="true">01 /</span></div>
+        <img src="assets/fold.svg" width="420" height="380" alt="" class="fold-art">
+        <figcaption><span class="figure-caption-title">Exploring the space of proteins</span><span class="figure-caption-note">A conceptual illustration</span></figcaption>
+      </figure>
+    </section>
+
+    <section id="research" class="research-section page-width section-layout" aria-labelledby="research-title">
+      <div class="section-label"><span class="section-number">01</span><h2 id="research-title">Research</h2></div>
+      <div class="section-content">
+        <p class="section-intro">From a protein’s structure<br> to what it can <em>do.</em></p>
+        <p class="body-copy">My research connects protein inverse folding with functional optimization. I am interested in how generative models can use structural constraints and activity signals to propose useful enzyme sequences.</p>
+        <div class="research-topics">
+          <div><span class="topic-index">I.</span><h3>Structure-aware generation</h3><p>Graph diffusion and inverse folding for sequence design conditioned on a protein backbone.</p></div>
+          <div><span class="topic-index">II.</span><h3>Learning from function</h3><p>Enzyme-domain adaptation, generative dataset curation, and KL-regularized GRPO.</p></div>
+          <div><span class="topic-index">III.</span><h3>Design under constraints</h3><p>Motif-preserving sequence redesign and computational analysis of protein interfaces.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="publications" class="publication-section page-width section-layout" aria-labelledby="publications-title">
+      <div class="section-label"><span class="section-number">02</span><h2 id="publications-title">Publications</h2></div>
+      <div class="section-content">
+        <article class="publication">
+          <div class="publication-meta"><span class="tag">RESEARCH ARTICLE</span><span>2026 · JCIM</span></div>
+          <h3><a href="https://doi.org/10.1021/acs.jcim.6c01587">CatIF-RL: Activity-Oriented Enzyme Sequence Design by Steered Inverse Protein Folding</a></h3>
+          <p class="authors"><strong>Yanheng Li</strong>, Jialong Xiong, Yuxin Zhang, Tong Cai, Chuan Fu, Shutong Li, Wei Xu, Ruoyi Lyu, Zhaoyang Chen, Zheng Guo, Xinqi Gong, Feng Wang.</p>
+          <p class="journal"><cite>Journal of Chemical Information and Modeling</cite> <strong>66</strong>(15), 9031–9044.</p>
+          <p class="publication-summary">CatIF-RL steers graph-diffusion inverse folding toward higher predicted catalytic activity through enzyme adaptation, generative dataset curation, and reinforcement learning.</p>
+          <p class="result-note"><strong>Reading the result.</strong> The reported approximately 4× gain is in surrogate-predicted <i>k</i><sub>cat</sub> relative to native enzymes, not experimentally measured enzyme activity. Sequence recovery is 0.55.</p>
+          <div class="publication-links">
+            <a class="pill-link" href="https://doi.org/10.1021/acs.jcim.6c01587">Paper <span aria-hidden="true">↗</span></a>
+            <a class="pill-link" href="https://pubmed.ncbi.nlm.nih.gov/42466941/">PubMed <span aria-hidden="true">↗</span></a>
+            <a class="pill-link" href="https://github.com/lynk-101-li/CatIF-RL">Code <span aria-hidden="true">↗</span></a>
+            <a class="pill-link" href="assets/catif-rl.bib" download>Download BibTeX <span aria-hidden="true">↓</span></a>
+          </div>
+          <details class="citation">
+            <summary>Full citation <span aria-hidden="true">+</span></summary>
+            <div class="citation-content">
+              <p id="citation-text">Li, Y.; Xiong, J.; Zhang, Y.; Cai, T.; Fu, C.; Li, S.; Xu, W.; Lyu, R.; Chen, Z.; Guo, Z.; Gong, X.; Wang, F. CatIF-RL: Activity-Oriented Enzyme Sequence Design by Steered Inverse Protein Folding. Journal of Chemical Information and Modeling 2026, 66 (15), 9031–9044. https://doi.org/10.1021/acs.jcim.6c01587.</p>
+              <p class="publication-dates">Published online July 17, 2026 · Issue date August 10, 2026</p>
+              <button class="copy-button" type="button" data-copy="citation-text" hidden>Copy citation</button>
+              <span class="copy-status" role="status" aria-live="polite"></span>
+            </div>
+          </details>
+        </article>
+      </div>
+    </section>
+
+    <section id="projects" class="projects-section page-width section-layout" aria-labelledby="projects-title">
+      <div class="section-label"><span class="section-number">03</span><h2 id="projects-title">Projects</h2></div>
+      <div class="section-content">
+        <div class="section-heading-row"><p class="section-intro small-intro">Ideas, made <em>reproducible.</em></p><a class="text-link" href="https://github.com/lynk-101-li?tab=repositories">All repositories <span aria-hidden="true">↗</span></a></div>
+        <div class="project-grid">
+          <article class="project-card">
+            <div class="project-topline"><span class="project-symbol" aria-hidden="true">↝</span><span class="tag">PAPER & CODE</span></div>
+            <h3>CatIF-RL</h3>
+            <p>Activity-oriented enzyme sequence design. The public implementation includes model training, sequence sampling, motif-preserving inpainting, and evaluation workflows.</p>
+            <ul class="project-tags" aria-label="CatIF-RL topics"><li>Inverse folding</li><li>Diffusion</li><li>GRPO</li></ul>
+            <a class="project-link" href="https://github.com/lynk-101-li/CatIF-RL">Explore CatIF-RL <span aria-hidden="true">↗</span></a>
+          </article>
+          <article class="project-card">
+            <div class="project-topline"><span class="project-symbol" aria-hidden="true">⌁</span><span class="tag">IN DEVELOPMENT</span></div>
+            <h3>HotsPot</h3>
+            <p>A computational toolkit for identifying and ranking residues at antigen–antibody interfaces. Its public scope includes interface analysis and glycan clash assessment.</p>
+            <ul class="project-tags" aria-label="HotsPot topics"><li>Protein interfaces</li><li>Structure analysis</li></ul>
+            <a class="project-link" href="https://github.com/lynk-101-li/HotsPot">Explore HotsPot <span aria-hidden="true">↗</span></a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="cv" class="cv-section page-width section-layout" aria-labelledby="cv-title">
+      <div class="section-label"><span class="section-number">04</span><h2 id="cv-title">CV</h2></div>
+      <div class="section-content">
+        <div class="section-heading-row"><p class="section-intro small-intro">A research <em>snapshot.</em></p><a class="text-link" href="cv.html">View research CV <span aria-hidden="true">↗</span></a></div>
+        <dl class="cv-list">
+          <div><dt>Affiliation</dt><dd><strong>Beijing Institute of Technology</strong><span>Biology · computational protein design</span></dd></div>
+          <div><dt>Research focus</dt><dd>Protein inverse folding, enzyme sequence design, graph diffusion, and reinforcement learning.</dd></div>
+          <div><dt>2026</dt><dd><strong>First-author publication in JCIM</strong><span>CatIF-RL · Activity-oriented enzyme sequence design</span></dd></div>
+          <div><dt>Open research</dt><dd>Public code for CatIF-RL and the HotsPot interface-analysis project.</dd></div>
+        </dl>
+      </div>
+    </section>
+
+    <section id="contact" class="contact-section page-width" aria-labelledby="contact-title">
+      <div><p class="eyebrow">05 / CONTACT</p><h2 id="contact-title">Let’s connect<br> over <em>good science.</em></h2></div>
+      <div class="contact-copy"><p>Interested in protein design, generative models, or scientific software? Find my work and public profile here.</p><div class="contact-links"><a class="button button-dark" href="https://github.com/lynk-101-li">Find me on GitHub <span aria-hidden="true">↗</span></a><a class="text-link" href="https://orcid.org/0009-0009-3101-2673">ORCID <span aria-hidden="true">↗</span></a></div></div>
+    </section>
+  </main>
+
+  <footer class="site-footer page-width"><p>© 2026 Yanheng Li <span lang="zh-Hans">李彦衡</span></p><p>Curiosity, structure, function.</p><a href="#top">Back to top <span aria-hidden="true">↑</span></a></footer>
+</body>
+</html>
